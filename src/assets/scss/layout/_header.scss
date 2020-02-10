@@ -135,7 +135,8 @@
 			@include vendor('animation', 'none');
 			background-color: transparent;
 			box-shadow: none;
-			position: absolute;
+			background: #2429432a;
+			position: fixed;
 
 			&.style1 { .logo { strong { color: _palette(accent1); } } }
 			&.style2 { .logo { strong { color: _palette(accent2); } } }

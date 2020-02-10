@@ -12,9 +12,9 @@ import pic04 from '../assets/images/pic04.jpg'
 import pic05 from '../assets/images/pic05.jpg'
 import pic06 from '../assets/images/pic06.jpg'
 
-const isConstructing = true;
+const isConstructing = false;
 
-class HomeIndex extends React.Component {
+class Test extends React.Component {
     
     render() {
         if (!isConstructing) {
@@ -101,4 +101,4 @@ class HomeIndex extends React.Component {
     }
 }
 
-export default HomeIndex
+export default Test
