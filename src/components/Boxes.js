@@ -21,14 +21,14 @@ const Boxes = ()=>{
       <div id="main">
         {console.log(images)}
         <section id="one" className="tiles">
-          <article style={{backgroundImage: `url(${images[1].childImageSharp.fluid.src})`}}>
+          <article style={{backgroundImage: `url(${images[2].childImageSharp.fluid.src})`}}>
               <header className="major">
                   <h3>Agricultura</h3>
                   <p>Registro - Inspección - Análisis - Subdivisión predial</p>
               </header>
               <Link to="/landing" className="link primary"></Link>
           </article>
-          <article style={{backgroundImage: `url(${images[2].childImageSharp.fluid.src})`}}>
+          <article style={{backgroundImage: `url(${images[1].childImageSharp.fluid.src})`}}>
               <header className="major">
                   <h3>Escuela</h3>
                   <p>Talleres - Capacitaciones - Asesorías</p>

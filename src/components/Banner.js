@@ -84,8 +84,8 @@ const Banner = (props) => {
     query{
       image: file(relativePath:{eq: "banner2.jpg"}){
         sharp: childImageSharp{
-          fluid{
-            ...GatsbyImageSharpFluid_withWebp
+          fluid(quality: 80){
+            ...GatsbyImageSharpFluid
           }
         }
       }
