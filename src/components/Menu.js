@@ -6,10 +6,10 @@ const Menu = (props) => (
     <nav id="menu">
         <div className="inner">
             <ul className="links">
-                <li><Link onClick={props.onToggleMenu} to="/">Home</Link></li>
-                <li><Link onClick={props.onToggleMenu} to="/landing">Landing</Link></li>
-                <li><Link onClick={props.onToggleMenu} to="/generic">Generic</Link></li>
-                <li><Link onClick={props.onToggleMenu} to="/elements">Elements</Link></li>
+                <li><Link onClick={props.onToggleMenu} to="/">INICIO</Link></li>
+                <li><Link onClick={props.onToggleMenu} to="/agricultura">AGRICULTURA</Link></li>
+                <li><Link onClick={props.onToggleMenu} to="/escuela">ESCUELA</Link></li>
+                <li><Link onClick={props.onToggleMenu} to="/industria">INDUSTRIA</Link></li>
             </ul>
         </div>
         <a className="close" onClick={props.onToggleMenu} href="javascript:;">Close</a>

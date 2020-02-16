@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
-import Layout from '../components/layout'
+import Layout from '../layouts'
 import Banner from '../components/Banner'
 import Construction from '../components/Construction'
 

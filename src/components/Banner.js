@@ -1,6 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
+import { graphql, useStaticQuery } from 'gatsby'
+import BackgroundImage from 'gatsby-background-image'
 
+const HeaderContainer = styled(BackgroundImage)`
+`
 const HeaderElement = styled.div`
   display:flex;
   flex-direction:row;
@@ -74,17 +78,32 @@ const Content = styled.div`
   }
 `
 
-const Banner = (props) => (
-    <section id="banner" className="major">
+const Banner = (props) => {
+
+  const { image } = useStaticQuery(graphql`
+    query{
+      image: file(relativePath:{eq: "banner2.jpg"}){
+        sharp: childImageSharp{
+          fluid{
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+    }
+  `)
+
+  return(
+    <HeaderContainer id="banner" className="major" tag="section" fluid={image.sharp.fluid} fadeIn="soft">
         <div className="inner">
             <HeaderElement>
-                <h1>BEE-DRONE</h1>
+                <h1>BEE DRONE</h1>
             </HeaderElement>
             <Content>
-                <p>TEXTO PULENTO DE RELLENO</p>
+                <p>PROYECTOS - NATURALEZA - APRENDIZAJE</p>
             </Content>
         </div>
-    </section>
-)
+    </HeaderContainer>
+  )
+}
 
 export default Banner
