@@ -6,7 +6,7 @@ import Banner from '../components/Banner'
 import Boxes from '../components/Boxes'
 import Construction from '../components/Construction'
 
-const isConstructing = true;
+const isConstructing = false;
 
 class HomeIndex extends React.Component {
     
