@@ -4,23 +4,34 @@ import Helmet from 'react-helmet'
 import Layout from '../layouts'
 import BannerLanding from '../components/BannerLanding'
 
-import pic08 from '../assets/images/pic08.jpg'
-import pic09 from '../assets/images/pic09.jpg'
-import pic10 from '../assets/images/pic10.jpg'
 
 const Escuela = (props) => {
 
-    const { image } = useStaticQuery(graphql`
-    query{
-      image: file(relativePath:{eq: "item_educacion.jpg"}){
-        sharp: childImageSharp{
-          fluid(quality: 100){
-            ...GatsbyImageSharpFluid
-          }
+    const { image,firstBlock,secondBlock } = useStaticQuery(graphql`
+        query{
+        image: file(relativePath:{eq: "banner2.jpg"}){
+            sharp: childImageSharp{
+            fluid(quality: 100){
+                ...GatsbyImageSharpFluid
+            }
+            }
         }
-      }
-    }
-  `)
+        firstBlock: file(relativePath:{eq: "Contenido_educacion.jpg"}){
+            sharp: childImageSharp{
+                fixed(quality: 60, width: 500, height: 500) {
+                    src
+                    }
+            }
+        }
+        secondBlock: file(relativePath:{eq: "item_educacion.jpg"}){
+            sharp: childImageSharp{
+                fixed(quality: 60, width: 500, height: 500) {
+                    src
+                    }
+            }
+        }
+        }
+    `)
 
     return(
     <Layout>
@@ -40,7 +51,7 @@ const Escuela = (props) => {
             <section id="two" className="spotlights">
                 <section>
                     <Link to="/generic" className="image">
-                        <img src={pic08} alt="" />
+                        <img src={firstBlock.sharp.fixed.src} alt="" />
                     </Link>
                     <div className="content">
                         <div className="inner">
@@ -56,7 +67,7 @@ const Escuela = (props) => {
                 </section>
                 <section>
                     <Link to="/generic" className="image">
-                        <img src={pic09} alt="" />
+                        <img src={secondBlock.sharp.fixed.src} alt="" />
                     </Link>
                     <div className="content">
                         <div className="inner">
