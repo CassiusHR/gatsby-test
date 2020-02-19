@@ -26,42 +26,42 @@ const Boxes = ()=>{
                   <h3>Agricultura</h3>
                   <p>Registro - Inspección - Análisis - Subdivisión predial</p>
               </header>
-              <Link to="/landing" className="link primary"></Link>
+              <Link to="/escuela" className="link primary"></Link>
           </article>
           <article style={{backgroundImage: `url(${images[1].childImageSharp.fluid.src})`}}>
               <header className="major">
                   <h3>Escuela</h3>
                   <p>Talleres - Capacitaciones - Asesorías</p>
               </header>
-              <Link to="/landing" className="link primary"></Link>
+              <Link to="/escuela" className="link primary"></Link>
           </article>
           <article style={{backgroundImage: `url(${images[3].childImageSharp.fluid.src})`}}>
               <header className="major">
                   <h3>Industria</h3>
                   <p>Control - Registro - Inspección - Supervisión de operaciones</p>
               </header>
-              <Link to="/landing" className="link primary"></Link>
+              <Link to="/escuela" className="link primary"></Link>
           </article>
           <article style={{backgroundImage: `url(${images[5].childImageSharp.fluid.src})`}}>
               <header className="major">
                   <h3>Comunicaciones</h3>
                   <p>Turismo - Promoción Inmobiliaria - Eventos - Publicidad</p>
               </header>
-              <Link to="/landing" className="link primary"></Link>
+              <Link to="/escuela" className="link primary"></Link>
           </article>
             <article style={{backgroundImage: `url(${images[4].childImageSharp.fluid.src})`}}>
                 <header className="major">
                     <h3>Investigación</h3>
                     <p>Supervisión - Prevención - Monitoreo</p>
                 </header>
-                <Link to="/landing" className="link primary"></Link>
+                <Link to="/escuela" className="link primary"></Link>
             </article>
             <article style={{backgroundImage: `url(${images[6].childImageSharp.fluid.src})`}}>
                 <header className="major">
                     <h3>Naturaleza</h3>
                     <p>Apreciación - Valoración - Cuidado</p>
                 </header>
-                <Link to="/landing" className="link primary"></Link>
+                <Link to="/escuela" className="link primary"></Link>
             </article>
         </section>
         <section id="two">
