@@ -11,30 +11,30 @@ const Escuela = (props) => {
         query{
         image: file(relativePath:{eq: "banner2.jpg"}){
             sharp: childImageSharp{
-            fluid(quality: 100){
-                ...GatsbyImageSharpFluid
-            }
+                fluid(quality: 100){
+                    ...GatsbyImageSharpFluid
+                }
             }
         }
         firstBlock: file(relativePath:{eq: "Contenido_educacion.jpg"}){
             sharp: childImageSharp{
                 fixed(quality: 60, width: 500, height: 500) {
                     src
-                    }
+                }
             }
         }
         secondBlock: file(relativePath:{eq: "item_educacion.jpg"}){
             sharp: childImageSharp{
                 fixed(quality: 60, width: 500, height: 500) {
                     src
-                    }
+                }
             }
         }
         }
     `)
 
     return(
-    <Layout>
+    <>
         <Helmet>
             <title>Escuela - Bee-Drone</title>
             <meta name="description" content="Landing Page"/>
@@ -87,7 +87,7 @@ const Escuela = (props) => {
                 </div>
             </section>
         </div>
-    </Layout>
+    </>
     )
 }
 

@@ -25,6 +25,7 @@ module.exports = {
         path: 'images',
       },
     },
+    'gatsby-plugin-layout',
     'gatsby-plugin-sass',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
