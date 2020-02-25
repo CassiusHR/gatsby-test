@@ -58,7 +58,7 @@ const Boxes = ()=>{
                   <h3>Agricultura</h3>
                   <p>Registro - Inspección - Análisis - Subdivisión predial</p>
               </header>
-              <Link to="/escuela" className="link primary"></Link>
+              <Link to="/agricultura" className="link primary"></Link>
           </article>
           <article style={{backgroundImage: `url(${image2.sharp.fluid.src})`}}>
               <header className="major">
@@ -72,28 +72,28 @@ const Boxes = ()=>{
                   <h3>Industria</h3>
                   <p>Control - Registro - Inspección - Supervisión de operaciones</p>
               </header>
-              <Link to="/escuela" className="link primary"></Link>
+              <Link to="/industria" className="link primary"></Link>
           </article>
           <article style={{backgroundImage: `url(${image4.sharp.fluid.src})`}}>
               <header className="major">
                   <h3>Comunicaciones</h3>
                   <p>Turismo - Promoción Inmobiliaria - Eventos - Publicidad</p>
               </header>
-              <Link to="/escuela" className="link primary"></Link>
+              <Link to="/comunicaciones" className="link primary"></Link>
           </article>
             <article style={{backgroundImage: `url(${image5.sharp.fluid.src})`}}>
                 <header className="major">
                     <h3>Investigación</h3>
                     <p>Supervisión - Prevención - Monitoreo</p>
                 </header>
-                <Link to="/escuela" className="link primary"></Link>
+                <Link to="/investigacion" className="link primary"></Link>
             </article>
             <article style={{backgroundImage: `url(${image6.sharp.fluid.src})`}}>
                 <header className="major">
                     <h3>Naturaleza</h3>
                     <p>Apreciación - Valoración - Cuidado</p>
                 </header>
-                <Link to="/escuela" className="link primary"></Link>
+                <Link to="/naturaleza" className="link primary"></Link>
             </article>
         </section>
         <section id="two">
