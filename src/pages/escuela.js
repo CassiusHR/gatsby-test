@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import Helmet from 'react-helmet'
-import Layout from '../layouts'
 import BannerLanding from '../components/BannerLanding'
 
 
